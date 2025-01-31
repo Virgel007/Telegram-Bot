@@ -38,7 +38,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     - update: The update object from the telegram bot.
     - context: The context of the telegram bot.
     """
-    from task.credentials import BOT_TOKEN, ChatGPT_TOKEN
+    from credentials import BOT_TOKEN, ChatGPT_TOKEN
     from gpt import ChatGptService
     from util import load_message, send_image, show_main_menu
 
