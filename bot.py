@@ -1,11 +1,11 @@
 import logging
-from task.credentials import BOT_TOKEN, ChatGPT_TOKEN
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CallbackQueryHandler, CommandHandler, ContextTypes, MessageHandler, \
     filters
+from credentials import ChatGPT_TOKEN, BOT_TOKEN
 from gpt import ChatGptService
 from common import send_text, send_image, send_text_buttons, start
-from task.util import load_message, load_prompt
+from util import load_message, load_prompt
 
 # Configure logging
 logging.basicConfig(
